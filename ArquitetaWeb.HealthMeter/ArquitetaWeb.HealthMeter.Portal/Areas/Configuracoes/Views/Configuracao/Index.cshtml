@@ -5,8 +5,11 @@
    Html.DataGridFor(Model.Resultado)
         .Title((string)ViewBag.Title)
         .AddColumn(m => m.Id)
-        .AddColumn(m => m.DescricaoSistemaExterno)
-        .AddColumn(m => m.DataCadastro)        
-        .Id("DataGridDevices")
+        .AddColumn(m => m.MinTemperatura)
+        .AddColumn(m => m.MaxTemperatura)
+        .AddColumn(m => m.MinUmidade)
+        .AddColumn(m => m.MaxUmidade)
+        .AddColumn(m => m.TempoAtualizacao)
+        .Id("DataGrid")
         .Render();
 }

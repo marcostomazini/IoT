@@ -3,7 +3,9 @@
 @using (Html.Form((string)PageData["HeaderTitle"], (string)ViewBag.Title, labelBotao: "Salvar"))
 {
     @Html.ValidationSummary(false)    
-    @Html.EditorFieldFor(x => x.Entidade.DescricaoSistemaExterno, Width.Three)    
-    @Html.DisplayFieldFor(x => x.Entidade.DataCadastro, Width.Two)    
-    @Html.DisplayFieldFor(x => x.Entidade.DataAlteracao, Width.Two)   
+    @Html.EditorFieldFor(x => x.Entidade.MinTemperatura, Width.Two)
+    @Html.EditorFieldFor(x => x.Entidade.MaxTemperatura, Width.Two)
+    @Html.EditorFieldFor(x => x.Entidade.MinUmidade, Width.Two)
+    @Html.EditorFieldFor(x => x.Entidade.MaxUmidade, Width.Two)
+    @Html.EditorFieldFor(x => x.Entidade.TempoAtualizacao, Width.Two) 
 }

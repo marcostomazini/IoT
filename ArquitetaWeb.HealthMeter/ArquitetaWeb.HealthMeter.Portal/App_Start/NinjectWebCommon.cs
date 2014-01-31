@@ -55,13 +55,7 @@ namespace ArquitetaWeb.HealthMeter.Portal.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             /// Registrar as tabelas aqui
-            kernel.Bind<ArquitetaWeb.Common.Infra.Repositorios.IRepository<Device>>().To<ArquitetaWeb.Common.Infra.Repositorios.Repository<Device>>();
-            kernel.Bind<ArquitetaWeb.Common.Infra.Repositorios.IRepository<Usuario>>().To<ArquitetaWeb.Common.Infra.Repositorios.Repository<Usuario>>();
             kernel.Bind<ArquitetaWeb.Common.Infra.Repositorios.IRepository<Configuracao>>().To<ArquitetaWeb.Common.Infra.Repositorios.Repository<Configuracao>>();
-            kernel.Bind<ArquitetaWeb.Common.Infra.Repositorios.IRepository<Garcom>>().To<ArquitetaWeb.Common.Infra.Repositorios.Repository<Garcom>>();
-            kernel.Bind<ArquitetaWeb.Common.Infra.Repositorios.IRepository<Pedido>>().To<ArquitetaWeb.Common.Infra.Repositorios.Repository<Pedido>>();
-            kernel.Bind<ArquitetaWeb.Common.Infra.Repositorios.IRepository<Mesa>>().To<ArquitetaWeb.Common.Infra.Repositorios.Repository<Mesa>>();
-            kernel.Bind<ArquitetaWeb.Common.Infra.Repositorios.IRepository<Produto>>().To<ArquitetaWeb.Common.Infra.Repositorios.Repository<Produto>>();
         }        
     }
 }

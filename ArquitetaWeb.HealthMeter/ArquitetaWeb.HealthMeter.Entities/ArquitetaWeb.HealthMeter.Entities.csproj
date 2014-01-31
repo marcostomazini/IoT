@@ -46,15 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tabelas\Enum\VisualizacaoPedidos.cs" />
-    <Compile Include="Tabelas\Enum\SituacaoMesa.cs" />
-    <Compile Include="Tabelas\Garcom.cs" />
-    <Compile Include="Tabelas\Mesa.cs" />
-    <Compile Include="Tabelas\Pedido.cs" />
-    <Compile Include="Tabelas\Produto.cs" />
-    <Compile Include="Tabelas\Device.cs" />
     <Compile Include="Tabelas\Configuracao.cs" />
-    <Compile Include="Tabelas\Usuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -64,6 +56,9 @@
       <Project>{25f4b24c-039e-41a6-8d75-e41fafcf1667}</Project>
       <Name>ArquitetaWeb.Common.Infra</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tabelas\Enum\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

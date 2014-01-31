@@ -12,9 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquitetaWeb.HealthMeter.Entities", "ArquitetaWeb.HealthMeter.Entities\ArquitetaWeb.HealthMeter.Entities.csproj", "{BFF8569A-5D6D-460A-8F53-74C80CED785B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{27D92AAC-39AF-4299-A55D-06BB81D7CEC5}"
-	ProjectSection(SolutionItems) = preProject
-		Database\DB.sdf = Database\DB.sdf
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{476AE363-2767-4C4D-9663-352B98178853}"
 	ProjectSection(SolutionItems) = preProject

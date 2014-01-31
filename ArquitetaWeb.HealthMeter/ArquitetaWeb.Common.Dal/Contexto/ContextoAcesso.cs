@@ -17,15 +17,8 @@ namespace ArquitetaWeb.Common.Data.Contexto
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Pedido>().Property(p => p.Quantidade).HasPrecision(3, 2);
-
             modelBuilder.Conventions.Remove<System.Data.Entity.ModelConfiguration.Conventions.PluralizingTableNameConvention>();
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
-
-            //modelBuilder.Entity<CandidatoDevice>()
-            //        .HasOptional(a => a.Candidato)
-            //        .WithOptionalDependent()
-            //        .WillCascadeOnDelete(true);
 
             base.OnModelCreating(modelBuilder);
         }

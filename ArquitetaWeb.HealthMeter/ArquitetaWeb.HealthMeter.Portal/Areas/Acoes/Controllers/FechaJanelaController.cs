@@ -6,9 +6,9 @@ using ArquitetaWeb.HealthMeter.Entities.Tabelas;
 
 namespace ArquitetaWeb.HealthMeter.Portal.Configuracoes.Controllers
 {
-    public class FechaJanelaController : BaseController<Mesa>
+    public class FechaJanelaController : BaseController<Configuracao>
     {
-        public FechaJanelaController(IRepository<Mesa> repositorio)
+        public FechaJanelaController(IRepository<Configuracao> repositorio)
             : base(repositorio)
         {
             this.repositorio = repositorio;
