@@ -1,0 +1,116 @@
+﻿ <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>@ViewBag.Title</title>
+
+		<meta name="description" content="Dynamic tables and grids using jqGrid plugin" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- basic styles -->
+
+		<link href='@Url.Content("~/Assets/css/bootstrap.css")' rel="stylesheet" />
+		<link rel="stylesheet" href='@Url.Content("~/Assets/css/font-awesome.css")' />
+
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href='@Url.Content("~/Assets/css/font-awesome-ie7.css")' />
+		<![endif]-->
+
+		<!-- page specific plugin styles -->
+
+		<link rel="stylesheet" href='@Url.Content("~/Assets/css/jquery-ui-1.10.3.full.min.css")' />
+		<link rel="stylesheet" href='@Url.Content("~/Assets/css/datepicker.css")' />
+		<link rel="stylesheet" href='@Url.Content("~/Assets/css/ui.jqgrid.css")' />
+
+		<!-- fonts -->
+
+		<link rel="stylesheet" href='@Url.Content("~/Assets/css/ace-fonts.css")' />
+
+		<!-- ace styles -->
+
+		<link rel="stylesheet" href='@Url.Content("~/Assets/css/ace.css")' />
+		<link rel="stylesheet" href='@Url.Content("~/Assets/css/ace-rtl.css")' />
+		<link rel="stylesheet" href='@Url.Content("~/Assets/css/ace-skins.css")' />
+
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href='@Url.Content("~/Assets/css/ace-ie.css")' />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+
+		<script src='@Url.Content("~/Assets/js/ace-extra.js")'></script>
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+		<!--[if lt IE 9]>
+		<script src='@Url.Content("~/Assets/js/html5shiv.js")'></script>
+		<script src='@Url.Content("~/Assets/js/respond.src.js")'></script>
+		<![endif]-->
+
+        
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+
+		<script type="text/javascript">
+		    window.jQuery || document.write("<script src='@Url.Content("~/Assets/js/jquery-2.0.3.js")'>" + "<" + "/script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+            <script type="text/javascript">
+             window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.js'>"+"<"+"/script>");
+            </script>
+        <![endif]-->
+
+		<script type="text/javascript">
+		    if ("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.js'>" + "<" + "/script>");
+		</script>
+		<script src='@Url.Content("~/Assets/js/bootstrap.js")'></script>
+		<script src='@Url.Content("~/Assets/js/typeahead-bs2.min.js")'></script>
+
+		<!-- page specific plugin scripts -->
+
+		<script src='@Url.Content("~/Assets/js/date-time/bootstrap-datepicker.js")'></script>
+		<script src='@Url.Content("~/Assets/js/jqGrid/jquery.jqGrid.min.js")'></script>
+		<script src='@Url.Content("~/Assets/js/jqGrid/i18n/grid.locale-pt-br.js")'></script>
+        <script src='@Url.Content("~/Assets/js/jquery.easy-pie-chart.js")'></script>
+		<!-- ace scripts -->
+
+		<script src='@Url.Content("~/Assets/js/ace-elements.js")'></script>
+		<script src='@Url.Content("~/Assets/js/ace.js")'></script>
+
+	<body>
+        @Html.Partial("_NavBar")
+
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+			    try { arqWeb.settings.check('main-container', 'fixed') } catch (e) { }
+			    try { $(document).ready(function () { arqWeb.settings.select_skin() }); } catch (e) { }
+			</script>
+
+			<div class="main-container-inner">
+				
+                @Html.Partial("_Breadcrumb")
+
+                @RenderBody()
+
+                @Html.Partial("_Settings")
+                <!-- /#ace-settings-container -->
+			</div><!-- /.main-container-inner -->
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="icon-double-angle-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+    </body>
+
+    <!-- inline scripts related to this page -->
+
+    <script src='@Url.Content("~/Assets/js/custom.js")'></script>
+    <script src='@Url.Content("~/Assets/js/forms.js")'></script>
+
+</html>

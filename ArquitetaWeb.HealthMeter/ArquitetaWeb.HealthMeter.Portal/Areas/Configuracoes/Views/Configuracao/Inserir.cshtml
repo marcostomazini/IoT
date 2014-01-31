@@ -1,0 +1,9 @@
+﻿@model ArquitetaWeb.HealthMeter.Portal.Configuracoes.Configuracoes.Models.InserirConfiguracaoViewModel
+
+@using (Html.Form((string)PageData["HeaderTitle"], (string)ViewBag.Title, labelBotao: "Salvar"))
+{
+    @Html.ValidationSummary(false)    
+    @Html.EditorFieldFor(x => x.Entidade.DescricaoSistemaExterno, Width.Three)    
+    @Html.DisplayFieldFor(x => x.Entidade.DataCadastro, Width.Two)    
+    @Html.DisplayFieldFor(x => x.Entidade.DataAlteracao, Width.Two)   
+}

@@ -1,0 +1,8 @@
+http://localhost:8080/Api/InserirMesa
+
+User-Agent: Fiddler
+Host: localhost:8080
+Content-Length: 87
+Content-Type: application/json; charset=utf-8
+
+{"CodigoExterno":"3","NumeroMesa":3,"Descricao":null,"Situacao":2,"Observacao":"malll"}

@@ -1,0 +1,12 @@
+﻿@model ArquitetaWeb.HealthMeter.Portal.Configuracoes.Configuracoes.Models.IndexConfiguracaoViewModel
+
+@using (Html.Form((string)PageData["HeaderTitle"], (string)ViewBag.Title, false))
+{
+   Html.DataGridFor(Model.Resultado)
+        .Title((string)ViewBag.Title)
+        .AddColumn(m => m.Id)
+        .AddColumn(m => m.DescricaoSistemaExterno)
+        .AddColumn(m => m.DataCadastro)        
+        .Id("DataGridDevices")
+        .Render();
+}

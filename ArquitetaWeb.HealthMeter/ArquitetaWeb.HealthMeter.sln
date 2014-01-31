@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquitetaWeb.HealthMeter.Portal", "ArquitetaWeb.HealthMeter.Portal\ArquitetaWeb.HealthMeter.Portal.csproj", "{E4C92F03-2A54-4DF5-8B75-B8D22C3B7039}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquitetaWeb.Common.Dal", "ArquitetaWeb.Common.Dal\ArquitetaWeb.Common.Dal.csproj", "{19EA91A2-89EA-44D4-8543-209752B40EF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquitetaWeb.Common.Infra", "ArquitetaWeb.Common.Infra\ArquitetaWeb.Common.Infra.csproj", "{25F4B24C-039E-41A6-8D75-E41FAFCF1667}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquitetaWeb.Common.Infra.Mvc", "ArquitetaWeb.Common.Infra.Mvc\ArquitetaWeb.Common.Infra.Mvc.csproj", "{7C623721-AB38-47FD-8853-92F190715C89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquitetaWeb.HealthMeter.Entities", "ArquitetaWeb.HealthMeter.Entities\ArquitetaWeb.HealthMeter.Entities.csproj", "{BFF8569A-5D6D-460A-8F53-74C80CED785B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{27D92AAC-39AF-4299-A55D-06BB81D7CEC5}"
+	ProjectSection(SolutionItems) = preProject
+		Database\DB.sdf = Database\DB.sdf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{476AE363-2767-4C4D-9663-352B98178853}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4C92F03-2A54-4DF5-8B75-B8D22C3B7039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C92F03-2A54-4DF5-8B75-B8D22C3B7039}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C92F03-2A54-4DF5-8B75-B8D22C3B7039}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C92F03-2A54-4DF5-8B75-B8D22C3B7039}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19EA91A2-89EA-44D4-8543-209752B40EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19EA91A2-89EA-44D4-8543-209752B40EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19EA91A2-89EA-44D4-8543-209752B40EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19EA91A2-89EA-44D4-8543-209752B40EF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25F4B24C-039E-41A6-8D75-E41FAFCF1667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25F4B24C-039E-41A6-8D75-E41FAFCF1667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25F4B24C-039E-41A6-8D75-E41FAFCF1667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25F4B24C-039E-41A6-8D75-E41FAFCF1667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C623721-AB38-47FD-8853-92F190715C89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C623721-AB38-47FD-8853-92F190715C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C623721-AB38-47FD-8853-92F190715C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C623721-AB38-47FD-8853-92F190715C89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFF8569A-5D6D-460A-8F53-74C80CED785B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFF8569A-5D6D-460A-8F53-74C80CED785B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFF8569A-5D6D-460A-8F53-74C80CED785B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFF8569A-5D6D-460A-8F53-74C80CED785B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

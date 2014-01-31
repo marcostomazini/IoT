@@ -1,0 +1,79 @@
+﻿@model ArquitetaWeb.HealthMeter.Portal.Models.IndexPortalViewModel
+
+@using (Html.Form((string)PageData["HeaderTitle"], (string)ViewBag.Title, false))
+{
+<div class="col-xs-1 infobox infobox-blue2">
+	<div class="easy-pie-chart percentage" data-percent="@Model.DadosDCA.Ruido" data-size="76">
+		<span class="percent">@Model.DadosDCA.Ruido</span> 
+	</div>
+	
+	<div class="infobox-data">
+		<span class="infobox-text">nível de ruído</span>
+	</div>
+</div>
+    
+<div class="col-xs-1 infobox infobox-blue2">
+	<div class="easy-pie-chart percentage" data-percent="@Model.DadosDCA.Temperatura" data-size="76">
+		<span class="percent">@Model.DadosDCA.Temperatura</span> 
+	</div>
+	
+	<div class="infobox-data">
+		<span class="infobox-text">temperatura</span>
+	</div>
+</div>   
+    
+<div class="col-xs-1 infobox infobox-blue2">
+	<div class="easy-pie-chart percentage" data-percent="@Model.DadosDCA.Umidade" data-size="76">
+		<span class="percent">@Model.DadosDCA.Umidade</span> 
+	</div>
+	
+	<div class="infobox-data">
+		<span class="infobox-text">umidade relativa</span>
+	</div>
+</div>    
+}
+
+<script type="text/javascript">
+	jQuery(function($) {
+		$('.easy-pie-chart.percentage').each(function(){
+			var $box = $(this).closest('.infobox');
+			var barColor = $(this).data('color') || (!$box.hasClass('infobox-dark') ? $box.css('color') : 'rgba(255,255,255,0.95)');
+			var trackColor = barColor == 'rgba(255,255,255,0.95)' ? 'rgba(255,255,255,0.25)' : '#E2E2E2';
+			var size = parseInt($(this).data('size')) || 50;
+			$(this).easyPieChart({
+				barColor: barColor,
+				trackColor: trackColor,
+				scaleColor: false,
+				lineCap: 'butt',
+				lineWidth: parseInt(size/10),
+				animate: /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase()) ? false : 1000,
+				size: size
+			});
+		})
+						
+	})
+
+	setTimeout(function () {
+	    window.location.reload();
+	}, 360000);
+
+	carregar = function (url) {
+	    var url = (url);
+
+	    $.ajax({
+	        url: url,
+	        type: "POST",
+	        async: true,
+	        contentType: "application/json; charset=utf-8",
+	        cache: false,
+	        dataType: "Json",
+	        success: function (data) {
+	            if (data.Sucesso == true) {
+	                window.showModalDialog("http://localhost:8080/Portal/Acoes/FechaJanela")
+	            }
+	        }
+	    });
+	}
+
+	carregar("Portal/Regras");
+</script>

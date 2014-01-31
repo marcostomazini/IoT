@@ -1,0 +1,105 @@
+﻿<a class="menu-toggler" id="menu-toggler" href="#">
+	<span class="menu-text"></span>
+</a>
+
+<div class="sidebar" id="sidebar">
+	<script type="text/javascript">
+		try { arqWeb.settings.check('sidebar', 'fixed') } catch (e) { }
+	</script>
+
+	<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+		<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+			<button class="btn btn-success">
+				<i class="icon-signal"></i>
+			</button>
+
+			<button class="btn btn-info">
+				<i class="icon-pencil"></i>
+			</button>
+
+			<button class="btn btn-warning">
+				<i class="icon-group"></i>
+			</button>
+
+			<button id="btnSettings" class="btn btn-danger">
+		        <i class="icon-cogs"></i>
+			</button>
+		</div>
+
+		<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+			<span class="btn btn-success"></span>
+
+			<span class="btn btn-info"></span>
+
+			<span class="btn btn-warning"></span>
+
+			<span class="btn btn-danger"></span>
+		</div>
+	</div><!-- #sidebar-shortcuts -->
+
+	<ul class="nav nav-list">
+        		
+        <li>
+			<a href="#" class="dropdown-toggle">
+				<i class="icon-edit"></i>
+				<span class="menu-text"> Cadastros </span>
+
+				<b class="arrow icon-angle-down"></b>
+			</a>
+
+			<ul class="submenu">
+
+                <li>
+					<a href="/Portal/Cadastros/Usuario">
+						<i class="icon-double-angle-right"></i>
+						Usuário
+					</a>
+				</li>
+
+                <li>
+					<a href="/Portal/Cadastros/Device">
+						<i class="icon-double-angle-right"></i>
+						Equipamento
+					</a>
+				</li>
+
+
+				<li>
+					<a href="/Portal/Cadastros/Garcom">
+						<i class="icon-double-angle-right"></i>
+						Garçom
+					</a>
+				</li>
+
+			</ul>
+		</li>	
+        
+        <li>
+			<a href="#" class="dropdown-toggle">
+				<i class="icon-desktop"></i>
+				<span class="menu-text"> Acompanhamentos </span>
+
+				<b class="arrow icon-angle-down"></b>
+			</a>
+
+			<ul class="submenu">
+
+                <li>
+					<a href="/Portal/Acompanhamentos/Mesa">
+						<i class="icon-double-angle-right"></i>
+						Mapa das Mesas
+					</a>
+				</li>
+            </ul>
+        </li>	
+
+	</ul><!-- /.nav-list -->
+
+	<div class="sidebar-collapse" id="sidebar-collapse">
+		<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+	</div>
+
+	<script type="text/javascript">
+		try { arqWeb.settings.check('sidebar', 'collapsed') } catch (e) { }
+	</script>
+</div>
